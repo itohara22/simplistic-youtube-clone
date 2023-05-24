@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap");
+:root {
+  --pri-font: "Roboto", sans-serif;
+  --sec-font: "Montserrat", sans-serif;
+}
+body {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  padding: 1rem;
+  background-color: black;
+  height: 4rem;
+}
+
+.header_title {
+  text-decoration: none;
+  font-family: var(--pri-font);
+  text-align: center;
+}
+
+.video_lib {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.video_container {
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(41, 41, 41);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: var(--sec-font);
+  position: relative;
+  text-decoration: none;
+}
+
+.video_container h3 {
+  text-decoration: none;
+  color: white;
+}
+
+.thumbnail {
+  aspect-ratio: 0.8;
+  width: 200px;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video_container:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 6px rgb(116, 116, 116));
+}
+
+.creator_desc {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  font-size: 0.8rem;
+}
+.creator_pic {
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 20%;
+  border-radius: 50%;
+}
+.page_cntrl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page_cntrl button {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(134, 132, 132);
+  font-family: var(--pri-font);
+  padding: 0.7rem 1.2rem;
+  margin: 1rem;
+}
+
+.page_cntrl button:hover {
+  cursor: pointer;
+  border: solid white 1px;
+}
+
+.page_indicator {
+  color: white;
+  font-family: var(--sec-font);
+}
+
+.video_wrapper {
+  display: grid;
+  place-items: center;
+}
+.video_player {
+  max-width: 60%;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video_player_info {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
